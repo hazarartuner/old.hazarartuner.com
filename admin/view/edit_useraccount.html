@@ -1,0 +1,27 @@
+<h2>Profil Bilgileri</h2>
+<form method="post">
+	<label>Profil Resmi:</label>
+	<input type="file" fileid="{%useraccount.image_id%}" />
+	
+	<label>Görünen Ad:</label>
+	<input type="text" name="" value="{%useraccount.displayname%}" />
+	
+	<label>Doğum Tarihi:</label>
+	<input type="date" name="" value="{%useraccount.birthday%}" />
+	
+	<label>Kullanıcı Adı:</label>
+	<input type="text" name="" value="{%useraccount.username%}" />
+	
+	<label>E-Posta:</label>
+	<input type="text" name="" value="{%useraccount.email%}" />
+	
+	<label>Üyelik Tarihi:</label>
+	<input type="datetime" name="" value="{%useraccount.register_date%}" />
+	
+	<br clear="all" /><br /><br />
+	{%user_roles_html%}
+	
+	<input type="submit" name="admin_action" value="Kaydet" />
+</form>
+
+

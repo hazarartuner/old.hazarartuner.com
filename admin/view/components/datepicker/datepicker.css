@@ -1,0 +1,82 @@
+.dateTimePickerOuter
+{
+	float:left;
+	height:29px;
+}
+
+.dateTimePickerOuter.date
+{
+	width:182px;
+}
+
+.dateTimePickerOuter.time
+{
+	width:104px;
+}
+
+.dateTimePickerOuter.datetime
+{
+	width:310px;
+}
+
+
+.dateTimePickerOuter.time .dateOuter, .dateTimePickerOuter.date .timeOuter
+{
+	display:none
+}
+
+.dateTimePickerOuter .dateOuter
+{
+	width:182px;
+	height:29px;
+	float:left;
+}
+
+.dateTimePickerOuter .timeOuter
+{
+	width:104px;
+	height:29px;
+	float:right;
+}
+
+.dateTimePickerOuter span
+{
+	width:10px;
+	height:29px;
+	float:left;
+	font:13px Trebuchet MS;
+	line-height: 29px;
+	text-align: center;
+}
+
+.dateTimePickerOuter select
+{
+	height:29px;
+	float:left;
+	clear:none;
+}
+
+.dateTimePickerOuter .dp_year
+{
+	width:55px;
+}
+
+.dateTimePickerOuter .dp_month
+{
+	width:75px;
+	margin:0 5px;
+}
+
+.dateTimePickerOuter .dp_day
+{
+	width:42px;
+}
+
+.dateTimePickerOuter input[type=text]
+{
+	width:16px !important;
+	float:left;
+	clear:none !important;
+	margin:0;
+	background: none !important;
+}

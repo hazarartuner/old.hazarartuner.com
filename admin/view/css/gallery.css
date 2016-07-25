@@ -1,0 +1,104 @@
+.galleryOuter
+{
+	min-height:129px;
+	float:left;
+	clear:left;
+}
+
+.galleryListOuter {
+	margin:10px 0 0 0;
+	float:left;
+	border:1px #CCC solid;
+	width:805px;
+	height:126px;
+	background: #eee;
+	padding:0;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+.galleryList {
+	float:left;
+	display:block;
+	margin:0 0 10px 0;
+	padding:0;
+	list-style: none;
+}
+
+.galleryItem {
+	width:125px;
+	height:87px;
+	float:left;
+	padding: 10px;
+	overflow:hidden;
+	position:relative;
+	border:solid 1px #cccccc;
+	background: #fff;
+	cursor: move;
+	margin:9px 0 0 9px;
+}
+
+.galleryList.readonly .galleryItem{
+    cursor:default;
+}
+
+.galleryItem .shadow{
+	width:125px;
+	height:89px;
+	box-shadow: inset 0 0 7px #aaa;
+	position:absolute;
+	left:11px;
+	top:11px;
+	z-index: 5;
+}
+
+.galleryItem img{
+	float:left;
+	position:relative;
+	z-index: 1;
+	display:block;
+	width:123px;
+	height:87px;
+	border:solid 1px #cccccc;
+}
+
+.galleryItem .delButton
+{
+	min-width: 10px !important;
+	position:absolute;
+	left:44px;
+	top:40px;
+	z-index: 5;
+	display:none;
+	opacity:0;
+	margin:0;
+	text-align:center;
+	cursor: pointer;
+}
+
+.galleryUploaderButtonOuter
+{
+	float:right;
+	width:82px;
+	height:29px;
+	display:block;
+	clear:right;
+	margin:20px 0;
+	border:none;
+	cursor: pointer;
+}
+
+.galleryUploaderQueue
+{
+	float:right;
+	width:200px;
+	height:29px;
+	margin:20px 20px 0 0;
+	overflow:hidden;
+}
+
+.galleryAddFileButton
+{
+	float:right;
+	margin:10px 10px 0 0;
+}

@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+.fileOuter
+{
+	width:125px;
+	height:110px;
+	border:solid 1px #cccccc;
+	float:left;
+	clear:left;
+	position:relative;
+	margin:0;
+	padding:10px;
+}
+
+.fileOuter .filethumb
+{
+	width:123px;
+	height:87px;
+	float:left;
+	cursor:pointer;
+	margin:0 0 6px 0;
+	border:solid 1px #ccc;
+	background: #fff !important;
+}
+
+.fileOuter .button
+{
+	position:absolute;
+	padding-left:0;
+	padding-right:0;
+	margin:0 !important;
+	width:83px;
+	left:30px;
+	top:40px;
+	z-index:15;
+	opacity:0;
+}
+
+.fileOuter:hover .button
+{
+	-webkit-transition:opacity 0.2s;
+	opacity:1;
+}
+
+.fileOuter .fileName
+{
+	width:100%;
+	height:20px;
+	font:11px Arial;
+	line-height:20px;
+	color:#cccccc;
+	float:right;
+	text-align: center;
+	cursor: default;
+	overflow:hidden;
+}
+
+.fileOuter:hover .fileName
+{
+	display:none;
+}
+
+.fileOuter .fileButtonsOuter
+{
+	width:125px;
+	height:20px;
+	position:absolute;
+	left:10px;
+	bottom:5px;
+	background: #fff;
+	text-align: center;
+	visibility: hidden;
+	-webkit-transition: opacity 0.2s linear;
+	opacity:0;
+}
+
+.fileOuter:hover .fileButtonsOuter
+{
+	opacity:1;
+}
+
+.fileOuter .fileButtonsOuter .fBtn
+{
+	width: 20px;
+	height: 20px;
+	display:inline-block;
+	margin:0 3px;
+	background-position: left top;
+}
+
+.fileOuter .fileButtonsOuter .fBtn:hover
+{
+	background-position: left bottom;
+}
+
+.fileOuter .editButton
+{
+	background-image: url(../images/btnEdit.png);
+}
+
+.fileOuter .lookatButton
+{
+	background-image: url(../images/btnView.png);
+}
+
+.fileOuter .playButton
+{
+	background-image: url(../images/btnPlay.png);
+}
+
+.fileOuter .deleteFile
+{
+	background-image: url(../images/btnDelete.png);
+}

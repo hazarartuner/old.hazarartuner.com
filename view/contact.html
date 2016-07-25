@@ -1,0 +1,25 @@
+<div id="contact_title">
+    <p>Availability : {%AVAILABILITY%}</p>
+</div>
+<div id="contact_follow">
+    <p>Also follow me on</p>
+</div>
+<div id="contact_form_outer">
+    <form id='contact_form' onsubmit="return false;">
+        <input type="hidden" name="action" value="sendMail" />
+
+        <input id='name' class="input367" name='name' data-text="Full Name *">
+        <input id='email' class="input367" name='email' data-text="E-Mail *">
+        <input class="input367" name='location' data-text="Location">
+        <input id="input367" name='timeline' class="input367" data-text="Time Line">
+        <input id="input745" name='budget' class="input367" data-text="Project Budget">
+        <textarea id="contact_text_area" name='info' class="input367" data-text="Briefly project info *"></textarea>
+        <a id="btn" class="btn_submit">Submit</a>
+        <p id="resultText"></p>
+    </form>
+</div>
+<div id="follow_content">
+    <a class="btn_twitter btn2" href="{%CONTACT_TWITTER%}" target="blank">Twitter</a>
+    <a class="btn_facebook btn2" href="{%CONTACT_FACEBOOK%}" target="blank">Facebook</a>
+    <a class="btn_linkedin btn2" href="{%CONTACT_LINKEDIN%}" target="blank">Linkedin</a>
+</div>

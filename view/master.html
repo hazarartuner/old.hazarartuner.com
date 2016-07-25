@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="{%description%}" />
+        <meta name="keywords" content="{%keywords%}" />
+        <meta name="author" content=" Mehmet Hazar Artuner, Arda Can Kırkoç" />
+        <meta name="contact" content="hi@hazarartuner.com" />
+
+        <meta property="og:title" content="{%og_title%}"/>
+        <meta property="og:description" content="{%og_description%}"/>
+        <meta property="og:image" content="{%site_address%}{%og_image%}"/>
+        <meta property="og:url" content="{%og_url%}"/>
+        <base href="{%site_address%}">
+
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+        <link rel="stylesheet" href="{%VIEW_URL%}css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300|Ubuntu:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src='{%VIEW_URL%}js/jquery-1.7.2.min.js'></script>
+        <script type="text/javascript" src='{%VIEW_URL%}js/master.js'></script>
+        <title>{%site_title%}</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="center_1200">
+                <a id="logo" href="home">
+                    <img src="{%VIEW_URL%}images/logo.png" width="80" height="80">
+                </a>
+                <ul id="menu">
+                    <li class="{%indexSelected%}"><a href="home">Hello!</a></li>
+                    <li class='{%profileSelected%}'><a href="profile">Profile</a></li>
+                    <li class="{%worksSelected%} {%work_detailSelected%}"><a href="works">Works</a></li>
+                    <li class="{%contactSelected%}"><a href="contact">Contact</a></li>
+                </ul>
+                <p id="slogan">{%SLOGAN%}</p>
+                <p id="slogan_alt">{%SLOGAN_ALT%}</p>
+                {%SLOGAN_BUTTON%}
+            </div>
+        </div>
+        <div id="content">
+            <div id="contentCenter">
+                {%contents%}
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerCenter">
+                <div id="footerSocial">
+                    <a id="twitter" class="socialLink" href="{%CONTACT_TWITTER%}" target="_blank"></a>
+                    <a id="facebook" class="socialLink" style="margin:0 10px;" href="{%CONTACT_FACEBOOK%}" target="_blank"></a>
+                    <a id="linkedin" class="socialLink" href="{%CONTACT_LINKEDIN%}" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        {%analystic%}
+    </body>
+</html>
