@@ -5,7 +5,7 @@ error_reporting(E_ALL ^ E_NOTICE); // Setup esnasındaki "Notice" hatalarını g
 /* DATABASE *****************************************/
 $dbname = 'hazar';
 $dbuser = 'root';
-$dbpass = 'root';
+$dbpass = 'piXEL.1987';
 
 /*
 $dbname = 'pxltrtle_hazarartuner';
