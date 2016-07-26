@@ -2,11 +2,12 @@
 class PA_DIRECTORY extends PA_FILE
 {
 	private $table;
+    private $table_file;
     private $public_root;
     private $private_root;
 	
-	function PA_DIRECTORY(){
-		parent::PA_FILE();
+	function __construct(){
+		parent::__construct();
 		
 		$this->table = $this->tables->directory;
 		$this->table_file = $this->tables->file;

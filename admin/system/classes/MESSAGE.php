@@ -5,7 +5,7 @@ class PA_MESSAGE extends DB
 	
 	function PA_MESSAGE()
 	{
-		parent::DB();
+		parent::__construct();
 		
 		$this->table = $this->tables->message;
 	}

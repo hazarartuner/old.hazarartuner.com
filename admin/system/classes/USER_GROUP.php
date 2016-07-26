@@ -6,7 +6,7 @@ class PA_USER_GROUP extends DB
 	
 	function PA_USER_GROUP()
 	{
-		parent::DB();
+		parent::__construct();
 		$this->table = $this->tables->user_group;
 	}
 	

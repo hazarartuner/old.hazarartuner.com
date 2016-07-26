@@ -7,7 +7,7 @@ class PA_LANGUAGE extends DB
 	private $tableLang = "";
 	
 	function PA_LANGUAGE(){
-		parent::DB();
+		parent::__construct();
 		
 		$this->tableI18n = $this->tables->i18n;
 		$this->tableLang = $this->tables->language;

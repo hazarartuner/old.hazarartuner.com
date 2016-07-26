@@ -8,8 +8,8 @@ class PA_FILE extends PA_THUMB
     private $private_root;
     private $copyNameTag = "Kopyasi";
 	
-	function PA_FILE(){
-		parent::PA_THUMB();
+	function __construct(){
+		parent::__construct();
 		
 		$this->table = $this->tables->file;
         $this->table_directory = $this->tables->directory;

@@ -7,7 +7,7 @@ class PA_ROLE extends DB
 	
 	function PA_ROLE()
 	{
-		parent::DB();
+		parent::__construct();
 		$this->table = $this->tables->role;
 	}
 	

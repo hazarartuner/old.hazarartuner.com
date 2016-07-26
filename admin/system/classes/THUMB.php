@@ -12,9 +12,9 @@ class PA_THUMB extends DB{
     private $system_root;
     public $error = array();
 	
-	function PA_THUMB(){
+	function __construct(){
 		global $common_admin_site;
-		parent::DB();
+		parent::__construct();
 		
 		$this->baseDir = $common_admin_site;
 		$this->table = $this->tables->thumb;

@@ -7,7 +7,7 @@ class PA_PERMISSION extends DB
 	
 	function PA_PERMISSION()
 	{
-		parent::DB();
+		parent::__construct();
 		$this->table = $this->tables->permission;
 	}
 	

@@ -6,7 +6,7 @@ class PA_LOG extends DB
 	
 	function PA_LOG()
 	{
-		parent::DB();
+		parent::__construct();
 		
 		$this->table = $this->tables->log;
 		$this->table_user = $this->tables->user;
