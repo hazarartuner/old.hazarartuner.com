@@ -46,7 +46,13 @@ class Template extends GlobalValues{
 	 */
 	public function addScript($scriptUrl, $http = false)
 	{
-		self::$SCRIPTS .= '<script type="text/javascript" src="' . ($http ? "" : $this->VIEW_URL) . $scriptUrl . '"></script>';
+		global $assets_versions;
+
+		if(!$assets_versions){
+			$assets_versions = "1.0";
+		}
+
+		self::$SCRIPTS .= '<script type="text/javascript" src="' . ($http ? "" : $this->VIEW_URL) . $scriptUrl . '?v=' . $assets_versions . '"></script>';
 	}
 	
 	/**

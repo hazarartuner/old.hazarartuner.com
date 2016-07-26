@@ -21,6 +21,8 @@ $prefix = "hpa_";
 require_once "system/classes/DB.php";
 /****************************************************/
 
+$assets_versions = "1.1";
+
 require_once "system/includes/options.php";
 
 if(get_option("admin_debug_mode") == "debugmode")
