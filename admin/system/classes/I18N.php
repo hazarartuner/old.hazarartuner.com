@@ -8,9 +8,9 @@ class PA_I18N extends DB
 	public $table;
 	
 	// TODO: burada kendi atadığın dili kullanmak yerine default dili kullanmayı sağla.
-	function PA_I18N($language = "tr_TR")
+	function __construct($language = "tr_TR")
 	{
-		parent::DB();
+		parent::__construct();
 		
 		$this->language = $language;
 		$this->table = $this->tables->i18n;		

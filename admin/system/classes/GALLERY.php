@@ -3,9 +3,9 @@ class PA_GALLERY extends PA_GALLERY_FILE
 {
 	private $table;
 	
-	function PA_GALLERY()
+	function __construct()
 	{
-		parent::PA_GALLERY_FILE();
+		parent::__construct();
 		
 		$this->table = $this->tables->gallery;
 	}

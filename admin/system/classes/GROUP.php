@@ -3,9 +3,9 @@ class PA_GROUP extends DB
 {
 	private $table;
 	
-	function PA_GROUP()
+	function __construct()
 	{
-		parent::DB();
+		parent::__construct();
 		$this->table = $this->tables->group;
 	}
 	

@@ -6,7 +6,7 @@ class PA_ROLE_PERMISSION extends DB
 	
 	function PA_ROLE_PERMISSION()
 	{
-		parent::DB();
+		parent::__construct();
 		$this->table = $this->tables->role_permission;
 	}
 	

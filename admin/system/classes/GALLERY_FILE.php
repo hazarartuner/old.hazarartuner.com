@@ -5,8 +5,8 @@ abstract class PA_GALLERY_FILE extends DB{
 	public $tableFile;
 	public $tableFileThumb;
 	
-	function PA_GALLERY_FILE(){
-		parent::DB();
+	function __construct(){
+		parent::__construct();
 		
 		$this->tableGalleryFile = $this->tables->gallery_file;
 		$this->tableThumb = $this->tables->thumb;

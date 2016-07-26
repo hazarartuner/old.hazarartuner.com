@@ -23,7 +23,7 @@ class DB
 	 * @param string $dbcharset
 	 * @param string $timezone
 	 */
-	function DB($dbname = null, $dbhost = null, $dbuser = null, $dbpass=null, $dbcharset="utf8", $timezone="+02:00")
+	function __construct($dbname = null, $dbhost = null, $dbuser = null, $dbpass=null, $dbcharset="utf8", $timezone="+02:00")
 	{
 		$arguments = func_get_args();
 		

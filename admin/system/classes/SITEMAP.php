@@ -6,7 +6,7 @@ class PA_SITEMAP extends DB
 	
 	function PA_SITEMAP()
 	{
-		parent::DB();
+		parent::__construct();
 		
 		$this->table = $this->tables->sitemap;
 		$this->table_i18n = $this->tables->i18n;

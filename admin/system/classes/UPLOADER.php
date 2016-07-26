@@ -8,7 +8,7 @@ class PA_UPLOADER extends DB{
     private $private_root;
 
     function PA_UPLOADER(){
-        parent::DB();
+        parent::__construct();
 
         $this->table = $this->tables->file;
 

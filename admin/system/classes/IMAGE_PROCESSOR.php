@@ -18,7 +18,7 @@ class PA_IMAGE_PROCESSOR
 	private $ERROR_TEXT_UNSUPPORTED_FILE_FORMAT;
 	private $ERROR_TEXT_FILE_MUST_BE_PNG;
 	
-	function PA_IMAGE_PROCESSOR(){
+	function __construct(){
 		$this->ERROR_TEXT_UNSUPPORTED_FILE_FORMAT = "Geçersiz dosya formatı girdiniz! Lütfen jpg,png veya gif formatlarından birini kullanın!";
 		$this->ERROR_TEXT_FILE_MUST_BE_PNG = "Resim .png formatında olmalı!";
         $this->ERROR_TEXT_FILE_NOT_FOUND = "Dosya bulunamadı!";

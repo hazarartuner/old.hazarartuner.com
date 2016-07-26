@@ -4,9 +4,9 @@ class PA_GROUP_PERMISSION extends DB
 {
 	private $table;
 	
-	function PA_GROUP_PERMISSION()
+	function __construct()
 	{
-		parent::DB();
+		parent::__construct();
 		$this->table = $this->tables->group_permission;
 	}
 	

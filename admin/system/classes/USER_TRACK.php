@@ -6,9 +6,9 @@ abstract class PA_USER_TRACK extends DB {
     public $trackKeyName;
     public $error = array();
 
-    public function PA_USER_TRACK() {
+    public function __construct() {
         global $sessionKeysPrefix;
-        parent::DB();
+        parent::__construct();
 
         $this->table = $this->tables->user_track;
         $this->trackKeyName = $sessionKeysPrefix . "_TRACKKEY";

@@ -6,7 +6,7 @@ class PA_USER_ROLE extends DB
 	
 	function PA_USER_ROLE()
 	{
-		parent::DB();
+		parent::__construct();
 		$this->table = $this->tables->user_role;
 	}
 	

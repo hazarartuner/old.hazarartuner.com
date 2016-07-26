@@ -4,8 +4,8 @@ class PA_USER extends PA_USER_TICKET {
 
     protected $table;
 
-    function PA_USER() {
-        parent::PA_USER_TICKET();
+    function __construct() {
+        parent::__construct();
         $this->table = $this->tables->user;
     }
 

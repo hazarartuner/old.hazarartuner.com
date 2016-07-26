@@ -4,8 +4,8 @@ abstract class PA_USER_TICKET extends PA_USER_TRACK {
 
     private $table;
 
-    public function PA_USER_TICKET() {
-        parent::PA_USER_TRACK();
+    public function __construct() {
+        parent::__construct();
         $this->table = $this->tables->user_ticket;
     }
 

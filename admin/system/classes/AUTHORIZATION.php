@@ -4,9 +4,9 @@ class PA_AUTHORIZATION extends DB {
 
     public $authorizationKeyName;
 
-    function PA_AUTHORIZATION() {
+    function __construct() {
         global $sessionKeysPrefix;
-        parent::DB();
+        parent::__construct();
 
         $this->authorizationKeyName = $sessionKeysPrefix . "_AUTHORIZATION";
     }

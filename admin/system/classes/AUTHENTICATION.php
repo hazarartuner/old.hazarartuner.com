@@ -5,8 +5,8 @@ class PA_AUTHENTICATION extends PA_USER {
 
     public $authenticated_user;
 
-    function PA_AUTHENTICATION() {
-        parent::PA_USER();
+    function __construct() {
+        parent::__construct();
         $this->authenticated_user = $this->getAuthenticatedUser();
     }
 
