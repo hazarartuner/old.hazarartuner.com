@@ -2,6 +2,9 @@ $(WorkDetailStart);
 
 function WorkDetailStart(){
     $('.visual_item').each(function(){
+
+        console.log($(this).attr('data-src'), $(this).attr('data-width'), $(this).attr('data-height'));
+
         var img = $('<img />');
             img.load(function(){
                     $(this).wrap('<div class="work_pic"/>');
