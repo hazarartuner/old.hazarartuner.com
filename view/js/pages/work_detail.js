@@ -5,9 +5,9 @@ function WorkDetailStart(){
         var img = $('<img />');
             img.load(function(){
                     $(this).wrap('<div class="work_pic"/>');
-                    $(this).parents('.work_pic_loader').css('min-height', 0);
+                    $(this).parents('.visual_item').css('min-height', 0);
 
-                    var template_item = $(this).parents('.work_pic_loader').find('.template_item');
+                    var template_item = $(this).parents('.visual_item').find('.template_item');
 
                     if((typeof template_item == 'object') && (template_item.length > 0)){
                         $(this).parent().prepend(template_item);
