@@ -1,4 +1,5 @@
-var templates = [];
+var templates = [],
+    templates_1010 = [];
 
 $(MasterStart);
 
@@ -14,5 +15,3 @@ function MasterStart(){
         {'key':'no_template'}];
 
 }
-
-//console.log(templates);
